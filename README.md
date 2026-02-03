@@ -49,17 +49,21 @@ The system supports four distinct operational modes:
 ---
 
 ## 📂 Project Structure
-The code is modularized for better maintainability:
 
+**🔹 Core Application**
+* `main.c` / `main.h`: Main loop and global definitions.
+* `micro_oven.c`: The "brain" of the project (Cooking Mode Logic).
 
-├── main.c              # Main application loop & initialization
-├── main.h              # Global definitions and includes
-├── isr.c               # Interrupt Service Routines (Safety/Timing)
-├── micro_oven.c        # Core logic for cooking modes (FSM)
-├── clcd.c              # Driver for 16x4 LCD Display
-├── matrix_keypad.c     # Driver for 4x3 Keypad scanning
-├── timers.c            # Configuration for Timer0 (Countdown) & Timer2 (PWM)
-└── dist/               # Contains the compiled .hex file
+**🔹 Drivers (Hardware Interface)**
+* `clcd.c`: Controls the display output.
+* `matrix_keypad.c`: Handles user inputs.
+* `timers.c`: Manages time-critical operations.
+
+**🔹 System & Safety**
+* `isr.c`: Interrupt handling for immediate safety response (Door Open, etc.).
+* `dist/`: compiled executables (`.hex`).
+
+---
 
 ## 📺 Project Demo
 Watch the full explanation and live simulation of this project on YouTube:
