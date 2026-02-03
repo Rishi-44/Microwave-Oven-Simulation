@@ -1,7 +1,10 @@
 # MPLAB X IDE - Ignore User Specific Options
 nbproject/private/
-nbproject/Makefile-*
-nbproject/Package-*
+nbproject/Package-default.bash
+nbproject/Makefile-default.mk
+nbproject/Makefile-genesis.properties
+nbproject/Makefile-impl.mk
+nbproject/Makefile-variables.mk
 
 # Ignore Build and Debug directories (Intermediate files)
 build/
@@ -14,10 +17,6 @@ disassembly/
 *~
 *.bak
 *.tmp
-
-# Optional: If you WANT to share the .hex file for PICSIMLAB, keep 'dist'.
-# If you want to force users to compile it themselves, uncomment the next line:
-# dist/
 
 # OS generated files
 .DS_Store
